@@ -15,7 +15,7 @@ const getStylesLoaders = (useCssModules) => {
       loader: 'css-loader',
       options: {
         modules: {
-          localIdentName: 'recipes__[name]--[local]'
+          localIdentName: 'webApp__[name]--[local]'
         },
         importLoaders: 1
       }
@@ -51,23 +51,13 @@ module.exports = {
         test: /\.(scss|sass)$/,
         include: [path.resolve(__dirname, 'src/js')],
         exclude: /node_mudules/,
-        use: [
-          ...getStylesLoaders(true),
-          {
-            loader: 'postcss-loader'
-          }
-        ]
+        use: getStylesLoaders(true)
       },
       {
         test: /\.css$/i,
         exclude: /node_mudules/,
         include: [path.resolve(__dirname, 'src/scss')],
-        use: [
-          ...getStylesLoaders(false),
-          {
-            loader: 'postcss-loader'
-          }
-        ]
+        use: getStylesLoaders(false)
       },
       {
         type: 'asset',
