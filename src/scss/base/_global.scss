@@ -1,0 +1,40 @@
+.noScroll {
+    overflow: hidden !important;
+}
+
+.myContainer {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media (min-width: 576px) {
+    .myContainer {
+        max-width: 640px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .myContainer {
+        max-width: 720px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .myContainer {
+        max-width: 960px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .myContainer {
+        max-width: 1200px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .myContainer {
+        max-width: 1400px !important;
+    }
+}
