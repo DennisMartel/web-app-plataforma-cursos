@@ -284,15 +284,11 @@
         margin-inline-end: rem(8);
         font-size: rem(16);
       }
-
-      &:last-child {
-        // border-bottom: 0px;
-      }
     }
   }
 }
 
-.buttonWrap {
+.footer {
   position: absolute;
   bottom: 0;
   left: 0;

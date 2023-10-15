@@ -2,6 +2,9 @@ import { useState } from "react";
 import classNames from "classnames";
 import styles from "./Menu.scss";
 import { Link } from "react-router-dom";
+import ProfileDropdown from "../Dropdowns/ProfileDropdown";
+
+const isLoggedIn = false;
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -43,16 +46,17 @@ const Menu = () => {
                 <i className={classNames("fa fa-shopping-cart", styles.cartIcon)} aria-hidden="true"></i>
                 <div className={styles.badge}>0</div>
               </div>
-              <div className={styles.authButton}>
-                <Link to={"auth/signin"}>Inicia sesión</Link>
-                <div>|</div>
-                <Link to={"auth/enroll"}>Únete gratis</Link>
-              </div>
+              {isLoggedIn ? <ProfileDropdown /> : (
+                <div className={styles.authButton}>
+                  <Link to={"auth/signin"}>Inicia sesión</Link>
+                  <div>|</div>
+                  <Link to={"auth/enroll"}>Únete gratis</Link>
+                </div>
+              )}
             </div>
             <div className={classNames(styles.headerMobile, styles.mobileLeft)}>
               <div className={styles.openMobile} onClick={() => setOpen(!open)}>
                 <i className={classNames("fa fa-bars", styles.menuIcon)} aria-hidden="true"></i>
-                <span className={styles.menuText}>Menu</span>
               </div>
             </div>
             <div className={styles.headerMobile}>
@@ -65,6 +69,7 @@ const Menu = () => {
                 <i className={classNames("fa fa-shopping-cart", styles.cartIcon)} aria-hidden="true"></i>
                 <div className={styles.badge}>0</div>
               </div>
+              {isLoggedIn && <ProfileDropdown />}
             </div>
           </div>
         </div>
@@ -104,10 +109,12 @@ const Menu = () => {
             </Link>
           </li>
         </ul>
-        <div className={styles.buttonWrap}>
-          <Link className={styles.buttonEnroll} to={"auth/enroll"}>Únete gratis</Link>
-          <Link className={styles.buttonLogin} to={"auth/signin"}>Inicia sesión</Link>
-        </div>
+        {!isLoggedIn && (
+          <div className={styles.footer}>
+            <Link className={styles.buttonEnroll} to={"auth/enroll"}>Únete gratis</Link>
+            <Link className={styles.buttonLogin} to={"auth/signin"}>Inicia sesión</Link>
+          </div>
+        )}
       </div>
     </>
   )

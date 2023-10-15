@@ -1,0 +1,123 @@
+@import "../../../../scss/module-base.scss";
+
+.menu {
+  position: relative;
+  margin-inline-start: rem(20);
+
+  @include md {
+    margin-inline-start: rem(32);
+  }
+}
+
+.menuTrigger {
+  img {
+    width: rem(32);
+    height: rem(32);
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    border-radius: rem(32);
+    cursor: pointer;
+    overflow: hidden;
+
+    @include md {
+      width: rem(40);
+      height: rem(40);
+    }
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: rem(59.2);
+  right: 0;
+  background-color: $white;
+  padding: rem(9.6) rem(20);
+  width: rem(216);
+  border-radius: rem(4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  z-index: 1020;
+
+  @include sm {
+    width: rem(260);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all .3s ease;
+  }
+
+  &.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(rem(-8));
+    transition: all .3s ease;
+  }
+}
+
+.dropdownHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: rem(16);
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: rem(12);
+
+  img {
+    width: rem(40);
+    height: rem(40);
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    border-radius: rem(40);
+  }
+}
+
+.headerTexts {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+
+  .welcome {
+    font-size: rem(12);
+    font-weight: 600;
+  }
+
+  .name {
+    font-size: rem(14.4);
+    font-weight: 500;
+  }
+}
+
+.dropdownItem {
+  display: flex;
+  flex-wrap: nowrap;
+
+  a {
+    position: relative;
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    flex-direction: row;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: rem(14.4);
+    line-height: 1.2;
+    min-height: rem(40);
+    color: $black-2;
+    font-family: 'Montserrat', sans-serif;
+
+    &:hover,
+    &:active {
+      color: $purple-3;
+    }
+  }
+}
