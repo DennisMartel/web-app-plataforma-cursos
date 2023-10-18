@@ -1,0 +1,64 @@
+@import "../../../../scss/module-base.scss";
+
+.carouselInner {
+  position: relative;
+  min-width: 100%;
+  height: inherit;
+}
+
+.carouselImage {
+  margin-bottom: 0;
+  height: inherit;
+
+  img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+  }
+}
+
+.contentBox {
+  position: absolute;
+  top: rem(8);
+  background-color: $white;
+  max-width: 50%;
+  display: flex;
+  padding: rem(12);
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+  border-radius: rem(4);
+
+  @include lg {
+    max-width: 25%;
+    top: rem(28);
+    padding: rem(32);
+  }
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: rem(16);
+    margin-bottom: 0;
+
+    @include md {
+      font-size: rem(24);
+    }
+  }
+
+  .subtitle {
+    line-height: 1.6;
+    text-align: justify;
+    font-size: rem(9.8);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @include md {
+      font-size: rem(14.4);
+    }
+  }
+}

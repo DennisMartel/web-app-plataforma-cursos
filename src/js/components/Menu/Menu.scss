@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .headerInner {
@@ -199,7 +200,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 400;
+  z-index: 1000;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;

@@ -1,0 +1,35 @@
+@import "../../../../scss/module-base.scss";
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: rem(256);
+  
+  @include md {
+    height: rem(384);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  height: inherit;
+}
+
+.carouselControlPrev,
+.carouselControlNext {
+  position: absolute;
+  top: 43%;
+  z-index: 50;
+  font-size: rem(24);
+  color: $grey;
+  cursor: pointer;
+}
+
+.carouselControlPrev {
+  left: rem(16);
+}
+
+.carouselControlNext {
+  right: rem(16);
+}
