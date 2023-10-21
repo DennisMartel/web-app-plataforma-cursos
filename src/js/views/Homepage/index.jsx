@@ -2,6 +2,7 @@
 import Menu from "../../components/Menu";
 import HeroSlider from "../../components/Sliders/HeroSlider";
 import BenefitsForYou from "../../components/BenefitsForYou";
+import Course from "../../components/Course";
 import styles from "./Homepage.scss";
 
 const Homepage = () => {
@@ -15,6 +16,16 @@ const Homepage = () => {
       <Menu />
       <HeroSlider data={data} />
       <BenefitsForYou />
+      <div className={styles.courseWrapper}>
+        <div className="container">
+          <h1 className={styles.title}>Ultimos cursos</h1>
+          <section className={styles.courses}>
+            {[1, 2, 3, 4].map((_, index) => (
+              <Course key={index} />
+            ))}
+          </section>
+        </div>
+      </div>
     </main>
   )
 }

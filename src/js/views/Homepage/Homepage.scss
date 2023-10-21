@@ -1,6 +1,35 @@
 @import "../../../scss/module-base.scss";
 
 .webAppWrapper {
-    position: relative;
-    background-color: $bg-body;
+  position: relative;
+  background-color: $bg-body;
+}
+
+.courseWrapper {
+  padding: rem(32) 0;
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: rem(16);
+  }
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(20);
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

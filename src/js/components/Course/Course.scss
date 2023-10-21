@@ -1,0 +1,135 @@
+@import "../../../scss/module-base.scss";
+
+.course {
+  display: flex;
+  flex-direction: column;
+  border-radius: rem(4);
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+}
+
+.level,
+.bookmark {
+  position: absolute;
+  top: rem(12);
+}
+
+.level {
+  left: rem(12);
+  background: $purple-3;
+  color: $white;
+  padding-left: rem(12);
+  padding-right: rem(12);
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(12);
+  font-weight: 600;
+  border-radius: rem(12);
+  z-index: 200;
+}
+
+.bookmark {
+  right: rem(12);
+  background: $white;
+  padding: rem(8);
+  border-radius: rem(4);
+  color: $purple-3;
+  cursor: pointer;
+  font-size: rem(20);
+  z-index: 200;
+}
+
+.picture {
+  margin: 0;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  aspect-ratio: 1 / 0.5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(16);
+  color: $black-3;
+  font-weight: 600;
+}
+
+.widgets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: rem(12.8);
+  width: max-content;
+}
+
+.students,
+.duration {
+  display: flex;
+  align-items: center;
+  gap: rem(3.2);
+  font-size: rem(13.6);
+  font-weight: 500;
+  color: $grey-2;
+}
+
+.total,
+.time {
+  font-family: "Montserrat", sans-serif;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.avatar {
+  border-radius: rem(20);
+  width: rem(20);
+  height: rem(20);
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
+  margin-inline-start: rem(8);
+  font-size: rem(16);
+  font-family: "Montserrat", sans-serif;
+}
+
+.infoBtn {
+  display: block;
+  height: rem(36);
+  line-height: rem(36);
+  text-align: center;
+  color: $white;
+  font-family: "Montserrat", sans-serif;
+  background-color: $purple-3;
+  margin-bottom: rem(12);
+  font-weight: 500;
+  font-size: rem(13.6);
+}
