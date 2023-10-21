@@ -32,6 +32,9 @@ const Course = () => {
           <img className={styles.avatar} src="" alt="" />
           <p className={styles.name}>Dennis Martel</p>
         </div>
+        <div className={styles.price}>
+          <span className={styles.normalPrice}>$9.99</span>
+        </div>
         <Link className={styles.infoBtn}>Ver más</Link>
       </div>
     </article>
