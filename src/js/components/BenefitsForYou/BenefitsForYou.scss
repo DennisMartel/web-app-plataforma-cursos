@@ -1,0 +1,65 @@
+@import "../../../scss/module-base.scss";
+
+.wrapper {
+  position: relative;
+  padding: rem(40) 0;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(16);
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(48);
+  }
+}
+
+.benefitsCard {
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: rem(12);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16);
+  padding: rem(32) rem(16);
+
+  i {
+    font-size: rem(48);
+    color: $black-3;
+  }
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: rem(16);
+
+  @include md {
+    font-size: rem(20);
+  }
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: rem(13.6);
+  text-align: justify;
+}

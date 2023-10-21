@@ -1,6 +1,7 @@
 // Components
 import Menu from "../../components/Menu";
 import HeroSlider from "../../components/Sliders/HeroSlider";
+import BenefitsForYou from "../../components/BenefitsForYou";
 import styles from "./Homepage.scss";
 
 const Homepage = () => {
@@ -13,6 +14,7 @@ const Homepage = () => {
     <main className={styles.webAppWrapper}>
       <Menu />
       <HeroSlider data={data} />
+      <BenefitsForYou />
     </main>
   )
 }
