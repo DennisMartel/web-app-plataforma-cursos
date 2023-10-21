@@ -4,6 +4,7 @@ import HeroSlider from "../../components/Sliders/HeroSlider";
 import BenefitsForYou from "../../components/BenefitsForYou";
 import Course from "../../components/Course";
 import styles from "./Homepage.scss";
+import Footer from "../../components/Footer";
 
 const Homepage = () => {
   const data = [
@@ -20,12 +21,13 @@ const Homepage = () => {
         <div className="container">
           <h1 className={styles.title}>Ultimos cursos</h1>
           <section className={styles.courses}>
-            {[1, 2, 3, 4].map((_, index) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
               <Course key={index} />
             ))}
           </section>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }

@@ -1,0 +1,93 @@
+@import "../../../scss/module-base.scss";
+
+.wrapper {
+  background-color: $white;
+  width: 100%;
+  padding: rem(48) 0 0 0;
+  margin-top: rem(60);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: rem(60);
+
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.brandLogo {
+  position: relative;
+  flex: 1 1 0%;
+
+  a {
+    color: $black-3;
+    font-size: rem(40);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+    b {
+      color: $purple-3;
+    }
+  }
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+
+  .title {
+    font-size: rem(17.6);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-bottom: rem(20);
+  }
+
+  a {
+    font-size: rem(14.4);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $black-3;
+    width: max-content;
+    margin-bottom: rem(12);
+  }
+}
+
+.language {
+  flex: 1 1 0%;
+}
+
+.btnLang {
+  display: flex;
+  align-items: center;
+  padding: rem(8) rem(20);
+  font-size: rem(16);
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  border: 2px solid $black-3;
+  color: $black-3;
+  cursor: pointer;
+
+  span {
+    margin-inline-start: rem(8);
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid $light-grey;
+  margin-top: rem(16);
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: rem(12.8);
+    font-weight: 600;
+  }
+}

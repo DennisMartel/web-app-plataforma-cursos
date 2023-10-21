@@ -35,7 +35,7 @@ const CarouselFrame = ({
   }, []);
 
   const nextSlide = () => {
-    if (carouselRef.current.children.length > 0) {
+    if (carouselRef.current && carouselRef.current.children.length > 0) {
       const firstSlide = carouselRef.current.children[0];
 
       carouselRef.current.style.transition = `${transitionTime}ms ease-out all`;
@@ -60,7 +60,7 @@ const CarouselFrame = ({
   const carouselWrapperClasses = classNames(styles.carousel, wrapperClasses);
 
   const prevSlide = () => {
-    if (carouselRef.current.children.length > 0) {
+    if (carouselRef.current && carouselRef.current.children.length > 0) {
       const nextIndex = carouselRef.current.children.length - 1;
 
       const lastSlide = carouselRef.current.children[nextIndex];
