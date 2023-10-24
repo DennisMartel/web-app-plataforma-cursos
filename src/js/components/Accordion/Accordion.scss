@@ -1,0 +1,25 @@
+@import "../../../scss/module-base.scss";
+
+.wrapper {
+  border: 1px solid $light-grey;
+  overflow: hidden;
+  margin-bottom: rem(12);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: $extra-light-grey;
+  padding: rem(8) rem(16);
+  font-weight: 600;
+  font-size: rem(16);
+  font-family: "Montserrat", sans-serif;
+}
+
+.accordion {
+  padding: 0 rem(16);
+  transition: height .3s ease-in-out;
+  background-color: $white;
+}

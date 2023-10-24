@@ -26,7 +26,7 @@ const Menu = () => {
           <div className={styles.headerInner}>
             <div className={classNames(styles.headerDesktop, styles.desktopLeft)}>
               <div className={styles.brandLogo}>
-                <Link to={"/"}><b>Detu</b>dev.</Link>
+                <Link to={"/"}><b>detu</b>dev.</Link>
               </div>
               <div className={styles.menu}>
                 <i className={classNames("fa fa-bars", styles.menuIcon)} aria-hidden="true"></i>
@@ -61,7 +61,7 @@ const Menu = () => {
             </div>
             <div className={styles.headerMobile}>
               <div className={styles.brandLogo}>
-                <Link to={"/"}><b>Detu</b>dev.</Link>
+                <Link to={"/"}><b>detu</b>dev.</Link>
               </div>
             </div>
             <div className={classNames(styles.headerMobile, styles.mobileRight)}>

@@ -20,11 +20,11 @@ const Course = () => {
         <h1 className={styles.title}>Curso completo de PHP 8 y MySQL 8 desde cero</h1>
         <div className={styles.widgets}>
           <div className={styles.students}>
-            <i class="far fa-user"></i>
+            <i className="far fa-user"></i>
             <span className={styles.total}>1382</span>
           </div>
           <div className={styles.duration}>
-            <i class="far fa-clock"></i>
+            <i className="far fa-clock"></i>
             <span className={styles.time}>3h 50m</span>
           </div>
         </div>

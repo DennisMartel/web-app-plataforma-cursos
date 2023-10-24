@@ -3,8 +3,8 @@ import Menu from "../../components/Menu";
 import HeroSlider from "../../components/Sliders/HeroSlider";
 import BenefitsForYou from "../../components/BenefitsForYou";
 import Course from "../../components/Course";
-import styles from "./Homepage.scss";
 import Footer from "../../components/Footer";
+import styles from "./Homepage.scss";
 
 const Homepage = () => {
   const data = [

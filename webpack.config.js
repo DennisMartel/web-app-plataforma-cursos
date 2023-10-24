@@ -76,7 +76,7 @@ module.exports = {
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name]-styles.css?v=[contenthash]',
+      filename: 'css/[name]-[contenthash].css',
     })
   ]
 }

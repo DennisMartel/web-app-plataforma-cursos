@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className={styles.footer}>
           <div className={styles.brandLogo}>
-            <Link to="/"><b>Detu</b>dev.</Link>
+            <Link to="/"><b>detu</b>dev.</Link>
           </div>
           <div className={styles.company}>
             <p className={styles.title}>Compañía</p>

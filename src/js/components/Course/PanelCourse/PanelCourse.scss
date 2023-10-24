@@ -1,0 +1,65 @@
+@import "../../../../scss/module-base.scss";
+
+.panel {
+  grid-column: 1 / 5;
+  
+  @include lg {
+    grid-column: 1 / 2;
+  }
+}
+
+.box {
+  background-color: $white;
+  border-radius: rem(4);
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: rem(120);
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  padding: rem(16) 0;
+}
+
+.joinBtn {
+  width: 100%;
+  height: rem(48);
+  background-color: $purple-3;
+  border: 1px solid $purple-3;
+  color: $white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: rem(16);
+  border-radius: rem(8);
+  cursor: pointer;
+  transition: background-color .3s linear;
+  margin-bottom: rem(20);
+
+  &:hover {
+    background-color: $purple-2;
+  }
+}
+
+.unstyledList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  margin-bottom: rem(16);
+}
+
+.general {
+  display: flex;
+  align-items: center;
+
+  .text {
+    font-family: "Montserrat", sans-serif;
+    font-size: rem(16);
+    font-weight: 500;
+    margin-inline-start: rem(8);
+  }
+}
