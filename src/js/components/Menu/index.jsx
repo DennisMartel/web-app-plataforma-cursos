@@ -3,6 +3,7 @@ import classNames from "classnames";
 import styles from "./Menu.scss";
 import { Link } from "react-router-dom";
 import ProfileDropdown from "../Dropdowns/ProfileDropdown";
+import CartDropdown from "../Dropdowns/CartDropdown";
 
 const isLoggedIn = false;
 
@@ -42,10 +43,7 @@ const Menu = () => {
               </div>
             </div>
             <div className={classNames(styles.headerDesktop, styles.desktopRight)}>
-              <div className={styles.cart}>
-                <i className={classNames("fa fa-shopping-cart", styles.cartIcon)} aria-hidden="true"></i>
-                <div className={styles.badge}>0</div>
-              </div>
+              <CartDropdown />
               {isLoggedIn ? <ProfileDropdown /> : (
                 <div className={styles.authButton}>
                   <Link to={"auth/signin"}>Inicia sesión</Link>
@@ -65,10 +63,7 @@ const Menu = () => {
               </div>
             </div>
             <div className={classNames(styles.headerMobile, styles.mobileRight)}>
-              <div className={styles.cart}>
-                <i className={classNames("fa fa-shopping-cart", styles.cartIcon)} aria-hidden="true"></i>
-                <div className={styles.badge}>0</div>
-              </div>
+              <CartDropdown />
               {isLoggedIn && <ProfileDropdown />}
             </div>
           </div>

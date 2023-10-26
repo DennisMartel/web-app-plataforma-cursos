@@ -1,0 +1,144 @@
+@import "../../../../scss/module-base.scss";
+
+.dropdown {
+  position: relative;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+
+  .cartIcon {
+    font-size: rem(24);
+    color: $black-3;
+  }
+
+  .badge {
+    position: absolute;
+    top: rem(-8);
+    inset-inline-end: rem(-12);
+    width: rem(20);
+    height: rem(20);
+    line-height: rem(20);
+    text-align: center;
+    border-radius: rem(20);
+    color: $white;
+    background-color: $purple-3;
+  }
+}
+
+.dropdownCart {
+  position: absolute;
+  top: rem(51.2);
+  right: 0;
+  background-color: $white;
+  padding: rem(9.6) rem(20);
+  width: rem(216);
+  border-radius: rem(4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  z-index: 1020;
+
+  @include sm {
+    width: rem(352);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: rem(256);
+    overflow-y: auto;
+
+    li {
+      margin-bottom: rem(8);
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all .3s ease;
+  }
+
+  &.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(rem(-8));
+    transition: all .3s ease;
+  }
+}
+
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: rem(12);
+}
+
+.media {
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.image {
+  width: rem(80);
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.content {
+  flex: 1 1 0%;
+  overflow: auto;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(16);
+  font-weight: 500;
+  display: -webkit-box;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(20);
+  font-weight: 600;
+  margin: 0;
+}
+
+.checkout {
+  border-top: 1px solid $black-3;
+}
+
+.totolCart {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: rem(20);
+  margin-bottom: rem(8);
+  margin-top: rem(12);
+}
+
+.goCart {
+  display: block;
+  width: 100%;
+  height: rem(40);
+  line-height: rem(40);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: rem(16);
+  background-color: $purple-3;
+  border: 1px solid $purple-3;
+  color: $white;
+  text-align: center;
+  border-radius: rem(8);
+}

@@ -32,15 +32,11 @@
   top: rem(59.2);
   right: 0;
   background-color: $white;
+  width: rem(192);
   padding: rem(9.6) rem(20);
-  width: rem(216);
   border-radius: rem(4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   z-index: 1020;
-
-  @include sm {
-    width: rem(260);
-  }
 
   ul {
     list-style: none;
