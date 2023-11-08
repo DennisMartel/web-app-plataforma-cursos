@@ -40,9 +40,9 @@ const Cart = () => {
               <span className={styles.total}>$9.99</span>
               <div className={styles.checkout}>
                 <p className={styles.terms}>Al proceder con el pago aceptas los <Link to="/terms-and-conditions">Terminos y condiciones</Link> de la plataforma</p>
-                <button className={styles.checkoutBtn}>
+                <Link to="/payment/checkout" className={styles.checkoutBtn}>
                   <span>Continuar con el pago</span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

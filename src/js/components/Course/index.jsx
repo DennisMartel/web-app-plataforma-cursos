@@ -35,7 +35,7 @@ const Course = () => {
         <div className={styles.price}>
           <span className={styles.normalPrice}>$9.99</span>
         </div>
-        <Link className={styles.infoBtn}>Ver más</Link>
+        <Link to="/course/curso-completo-de-php-8-y-mysql-08-desde-cero" className={styles.infoBtn}>Ver más</Link>
       </div>
     </article>
   )

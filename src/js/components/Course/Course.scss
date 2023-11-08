@@ -21,7 +21,7 @@
 
 .level {
   left: rem(12);
-  background: $purple-3;
+  background: $black-3;
   color: $white;
   padding-left: rem(12);
   padding-right: rem(12);
@@ -39,7 +39,7 @@
   background: $white;
   padding: rem(8);
   border-radius: rem(4);
-  color: $purple-3;
+  color: $black-3;
   cursor: pointer;
   font-size: rem(20);
   z-index: 200;
@@ -146,8 +146,9 @@
   text-align: center;
   color: $white;
   font-family: "Montserrat", sans-serif;
-  background-color: $purple-3;
+  background-color: $black-3;
   margin-bottom: rem(12);
   font-weight: 500;
   font-size: rem(13.6);
+  border-radius: rem(8);
 }

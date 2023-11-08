@@ -1,0 +1,82 @@
+@import "../../../../scss/module-base.scss";
+
+.wrapper {
+  margin-bottom: rem(12);
+}
+
+.header {
+  background-color: $light-grey-2;
+  padding: rem(20) rem(40);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: rem(20);
+}
+
+.changeBtn {
+  background-color: transparent;
+  border: 2px solid $black-3;
+  height: rem(28);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  font-size: rem(16);
+  border-radius: rem(16);
+  cursor: pointer;
+}
+
+.body {
+  padding: rem(20) rem(40);
+  border-left: 2px solid $light-grey-2;
+  border-bottom: 2px solid $light-grey-2;
+  border-right: 2px solid $light-grey-2;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include md {
+    width: 85%;
+  }
+
+  @include lg {
+    width: 60%;
+  }
+
+  @include xl {
+    width: 50%;
+  }
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+    gap: rem(12);
+  }
+}
+
+.nextStepBtn {
+  background-color: $black-3;
+  width: max-content;
+  height: rem(48);
+  padding: 0 rem(48);
+  color: $white;
+  font-size: rem(16);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: rem(8);
+}

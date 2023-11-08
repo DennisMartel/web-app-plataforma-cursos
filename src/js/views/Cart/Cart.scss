@@ -167,18 +167,22 @@
 }
 
 .checkoutBtn {
+  display: block;
   width: 100%;
   height: rem(48);
-  background-color: $purple-3;
-  border: 1px solid $purple-3;
+  line-height: rem(48);
+  background-color: $black-3;
+  border: 1px solid $black-3;
   border-radius: rem(4);
   color: $white;
   font-size: rem(16);
   font-weight: 600;
   margin-top: rem(12);
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 
   &:hover {
-    background-color: $purple-2;
+    background-color: $black-2;
   }
 }

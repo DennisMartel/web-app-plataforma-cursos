@@ -1,0 +1,64 @@
+@import "../../../../scss/module-base.scss";
+
+.wrapper {
+  width: 100%;
+  margin-bottom: rem(16);
+  position: relative;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: rem(40);
+  font-size: rem(16);
+  color: $black-3;
+  background-color: $white;
+  padding: 0 rem(12);
+  border: 1px solid $light-grey;
+  outline: none;
+  font-weight: 500;
+  border-radius: rem(4);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.label {
+  display: inline-block;
+  font-size: rem(16);
+  margin-bottom: rem(4);
+  color: $black-3;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: rem(32);
+  height: rem(32);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+}
+
+.isValid {
+  display: block;
+}
+
+.isInvalid {
+  display: block;
+}
+
+.error {
+  color: $red;
+  font-size: rem(12);
+  font-weight: 500;
+}
